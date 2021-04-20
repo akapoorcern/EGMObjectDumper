@@ -47,8 +47,11 @@ This is how you add hadTowOverEm
 Also see how many times phoHoverE_ has been written in egmNtuplizer/plugins/egmNtuplizer_photons.cc
 
 In one place it is declared
+
 In one place it is filled
+
 In one place is added in the tree
+
 In one place it is cleared
 
 All the steps have to done for any variable
