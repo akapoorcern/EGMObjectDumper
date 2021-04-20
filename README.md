@@ -19,10 +19,13 @@ cmsRun EGMObjectDumper/egmNtuplizer/test/Run3_ConfFile_cfg.py
 #/store/mc/Run3Summer19MiniAOD/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_14TeV_Pythia8/MINIAODSIM/2021Scenario_106X_mcRun3_2021_re\
 alistic_v3-v2/130000/00DF0005-F507-2C4B-BF8B-C46342D7194E.root
 #You will need grid proxy setup for this
+
 ###################################################################################
-Check the branches in egmTree.root
+
+### Check the branches in egmTree.root
 
 See if you have the following branches 
+```
  pt
  eta
  hadTowOverEmValid
@@ -32,10 +35,13 @@ See if you have the following branches
  hcalTowerSumEtConeDR03
  sigmaIetaIeta
  trkSumPtSolidConeDR03
+```
 
 How to check if the branches were added in the code:
 example, look for this line in egmNtuplizer/plugins/egmNtuplizer_photons.cc
+```
 phoHoverE_          .push_back(iPho->hadTowOverEm());
+```
 This is how you add hadTowOverEm 
 
 Also see how many times phoHoverE_ has been written in egmNtuplizer/plugins/egmNtuplizer_photons.cc
